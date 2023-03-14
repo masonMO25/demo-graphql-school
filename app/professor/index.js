@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { model, Schema } from "mongoose";
 import config from "../config.js";
 
 const professorSchema = new Schema(
@@ -13,11 +13,9 @@ const professorSchema = new Schema(
     },
     officeHours: {
       type: String,
-      required: true,
     },
     officeLocation: {
       type: String,
-      required: true,
     },
     classes: [
       {
