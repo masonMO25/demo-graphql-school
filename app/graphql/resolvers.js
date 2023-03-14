@@ -14,6 +14,10 @@ const resolvers = {
     async schools() {
       return await schoolController.index();
     },
+    async class(_, args) {
+      console.log(args);
+      return await classController.show(args._id);
+    },
   },
 };
 
