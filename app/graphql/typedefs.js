@@ -20,8 +20,7 @@ const typeDefs = gql`
     creditHours: Int!
     professor: Professor
   }
-  # TODO: Add the 'Type'/Query for school
-  # TODO: Add the 'Type'/Query for professor
+  "A  🏫."
   type School {
     _id: ID!
     name: String!
@@ -29,7 +28,7 @@ const typeDefs = gql`
     studentCount: Int
     classes: [Class]
   }
-
+  "A profesor in our 🏫."
   type Professor {
     _id: ID!
     name: String!
